@@ -6,14 +6,16 @@
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 19:13:13 by tafocked          #+#    #+#             */
-/*   Updated: 2024/11/28 19:38:42 by tafocked         ###   ########.fr       */
+/*   Updated: 2024/11/29 16:31:55 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 #include <string>
 #include <iostream>
-#include "ICharacter.hpp"
+#include "Character.hpp"
+
+class ICharacter;
 
 class AMateria
 {
@@ -23,7 +25,7 @@ class AMateria
 		AMateria(const AMateria &copy);
 
 		/* Destructor */
-		~AMateria();
+		virtual ~AMateria();
 
 		/* Operator overload */
 		AMateria &operator=(const AMateria &copy);

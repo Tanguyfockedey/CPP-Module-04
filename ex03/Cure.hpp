@@ -6,10 +6,11 @@
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 20:04:19 by tafocked          #+#    #+#             */
-/*   Updated: 2024/11/28 20:25:36 by tafocked         ###   ########.fr       */
+/*   Updated: 2024/11/29 16:30:46 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
 #include "AMateria.hpp"
 
 class Cure: public AMateria
@@ -26,6 +27,6 @@ class Cure: public AMateria
 		Cure &operator=(const Cure &copy);
 
 		/* Member functions */
-		AMateria *clone() const override;
-		void use(ICharacter &target) override;
+		AMateria *clone() const;
+		void use(ICharacter &target);
 };

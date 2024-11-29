@@ -1,30 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ICharacter.cpp                                     :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/28 19:35:16 by tafocked          #+#    #+#             */
-/*   Updated: 2024/11/29 17:14:10 by tafocked         ###   ########.fr       */
+/*   Created: 2024/11/29 15:15:09 by tafocked          #+#    #+#             */
+/*   Updated: 2024/11/29 16:50:02 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ICharacter.hpp"
+#include "Cure.hpp"
+#include "Ice.hpp"
 
-ICharacter::ICharacter()
-{}
-
-ICharacter::ICharacter(const ICharacter &copy)
+int main(void)
 {
-	(void)copy;
-}
+	AMateria *ice = new Ice();
+	// ICharacter *Alice = new Character();
 
-ICharacter::~ICharacter()
-{}
-
-ICharacter &ICharacter::operator=(const ICharacter &copy)
-{
-	(void) copy;
-	return (*this);
+	std::cout << ice->getType() << std::endl;
+	// ice->use(*Alice);
+	// delete ice;
 }
