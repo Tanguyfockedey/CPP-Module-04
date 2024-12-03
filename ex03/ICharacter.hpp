@@ -6,7 +6,7 @@
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 19:27:47 by tafocked          #+#    #+#             */
-/*   Updated: 2024/11/29 18:03:50 by tafocked         ###   ########.fr       */
+/*   Updated: 2024/12/03 17:26:36 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,8 @@ class AMateria;
 class ICharacter
 {
 	public:
-		/* Constructors */
-		ICharacter();
-		ICharacter(const ICharacter &copy);
-
 		/* Destructor */
 		virtual ~ICharacter();
-
-		/* Operator overload */
-		ICharacter &operator=(const ICharacter &copy);
 
 		/* Member functions */
 		virtual std::string const &getName(void) const = 0;

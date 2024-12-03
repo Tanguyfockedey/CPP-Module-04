@@ -1,26 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   IMateriaSource.hpp                                 :+:      :+:    :+:   */
+/*   MateriaSource.hpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/29 15:14:28 by tafocked          #+#    #+#             */
-/*   Updated: 2024/12/03 19:26:34 by tafocked         ###   ########.fr       */
+/*   Created: 2024/12/03 17:56:24 by tafocked          #+#    #+#             */
+/*   Updated: 2024/12/03 19:33:10 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
-#include <string>
-#include "AMateria.hpp"
+#include "IMateriaSource.hpp"
 
-class IMateriaSource
+class MateriaSource: public IMateriaSource
 {
 	public:
-		/* Destructor */
-		virtual ~IMateriaSource();
+		/* Constructors */
+		MateriaSource();
+		MateriaSource(const MateriaSource &copy);
 
-		/* Member functions */
-		virtual void learnMateria(AMateria *m) = 0;
-		virtual AMateria *createMateria(std::string const &type) = 0;
+		/* Destructor */
+		~MateriaSource();
+
+		/* Operator overload */
+		MateriaSource &operator=(const MateriaSource &copy);
+
+		/* Member funtions */
+		void learnMateria(AMateria *m);
+		AMateria *createMateria(std::string const &type);
+
+	private:
+		AMateria *_codex[4];
 };
