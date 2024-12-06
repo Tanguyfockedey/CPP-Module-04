@@ -6,7 +6,7 @@
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 15:14:21 by tafocked          #+#    #+#             */
-/*   Updated: 2024/12/03 16:58:05 by tafocked         ###   ########.fr       */
+/*   Updated: 2024/12/06 16:19:26 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,10 @@ class Character: virtual public ICharacter
 		Character &operator=(const Character &copy);
 
 		/* Memeber functions */
-		virtual std::string const &getName(void) const;
-		virtual void equip(AMateria *m);
-		virtual void unequip(int idx);
-		virtual void use(int idx, ICharacter &target);
+		std::string const &getName(void) const;
+		void equip(AMateria *m);
+		void unequip(int idx);
+		void use(int idx, ICharacter &target);
 		AMateria *getMateria(int idx);
 
 	private:

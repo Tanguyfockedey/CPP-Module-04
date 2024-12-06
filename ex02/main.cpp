@@ -6,7 +6,7 @@
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 16:39:59 by tafocked          #+#    #+#             */
-/*   Updated: 2024/11/28 19:03:50 by tafocked         ###   ########.fr       */
+/*   Updated: 2024/12/06 16:16:27 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 
 int main(void)
 {
-	// {
-	// 	const Animal *cat = new Cat();
-	// 	const Animal *dog = new Dog();
-	// 	std::cout << std::endl;
+	{
+		const Animal *cat = new Cat();
+		const Animal *dog = new Dog();
+		std::cout << std::endl;
 
-	// 	delete dog;
-	// 	delete cat;
-	// }
+		delete dog;
+		delete cat;
+	}
 
 	// {
 	// 	Animal *house[5];

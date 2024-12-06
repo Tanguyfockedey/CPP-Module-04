@@ -6,7 +6,7 @@
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 16:39:59 by tafocked          #+#    #+#             */
-/*   Updated: 2024/11/27 19:12:17 by tafocked         ###   ########.fr       */
+/*   Updated: 2024/12/06 15:57:32 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,10 @@ int main(void)
 	dog = dog2;
 	animal = cat;
 	std::cout << std::endl;
+
+	Animal *cats = new Cat();
+	std::cout << cats->getType() << " : ";
+	cats->makeSound();
+	std::cout << std::endl;
+	delete cats;
 }

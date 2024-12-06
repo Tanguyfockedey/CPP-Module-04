@@ -6,7 +6,7 @@
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 16:55:12 by tafocked          #+#    #+#             */
-/*   Updated: 2024/11/28 18:59:31 by tafocked         ###   ########.fr       */
+/*   Updated: 2024/12/06 16:13:46 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Cat: public Animal
 		Cat(const Cat &copy);
 
 		/* Destructor */
-		virtual ~Cat();
+		~Cat();
 
 		/* Operator overload */
 		Cat &operator=(const Cat &copy);
